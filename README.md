@@ -14,3 +14,5 @@ docker exec -it $(docker ps -q) -- this will only work if there is only one cont
 
 cat /var/jenkins_home/secrets/initialAdminPassword
 
+## Getting Started
+https://dzone.com/articles/getting-started-with-jenkins-the-ultimate-guide
