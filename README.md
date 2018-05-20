@@ -8,3 +8,9 @@ docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
 http://localhost:8080/login?from=%2F
 
+## Get Jenkins Admin Password
+
+docker exec -it $(docker ps -q) -- this will only work if there is only one container running :) otherwise specify the container ID to enter the running one
+
+cat /var/jenkins_home/secrets/initialAdminPassword
+
